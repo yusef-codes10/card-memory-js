@@ -12,3 +12,8 @@
     display: flex;
     flex-direction: column;
 }
+
+.hero-section nav {
+    background-color: sienna;
+    padding: 1rem 2rem;
+}
