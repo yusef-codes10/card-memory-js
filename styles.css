@@ -34,4 +34,11 @@
     border-radius: 2rem;
     cursor: pointer;
     background-color: #ddbf14;
+    color: sienna;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.hero-section nav button:hover {
+    color: rgba(160, 81, 45, 0.698);
 }
