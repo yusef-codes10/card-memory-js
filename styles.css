@@ -27,3 +27,11 @@
     align-items: center;
     gap: 24px;
 }
+
+.hero-section nav button {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: #ddbf14;
+}
