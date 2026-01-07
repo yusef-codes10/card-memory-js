@@ -43,6 +43,14 @@
     color: rgba(160, 81, 45, 0.698);
 }
 
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+
 .hidden {
     display: none;
 }
