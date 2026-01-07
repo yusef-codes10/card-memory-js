@@ -42,3 +42,7 @@
 .hero-section nav button:hover {
     color: rgba(160, 81, 45, 0.698);
 }
+
+.hidden {
+    display: none;
+}
