@@ -4,3 +4,11 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.hero-section {
+    height: 100vh;
+    background-color: seagreen;
+
+    display: flex;
+    flex-direction: column;
+}
