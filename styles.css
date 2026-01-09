@@ -93,6 +93,9 @@
 .main-container .start-game .choose-cards {
     flex: 1;
     /* padding: 2rem; */
-    /* background-color: seagreen; */
+    background-color: seagreen;
     /* ! parent: .start-game  is not a flex container */
 }
+
+
+/* ! Gotta debug the flex: 1; not working */
