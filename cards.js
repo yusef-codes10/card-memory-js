@@ -11,6 +11,12 @@ const cards = {
     },
     card4: {
         id: 'pochacco'
+    },
+    card5: {
+        id: 'pompompurin'
+    },
+    card6: {
+        id: 'chococat'
     }
 
 }
