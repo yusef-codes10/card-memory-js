@@ -1,9 +1,15 @@
 import { cards } from "./cards.js";
 
 const startBtn = document.getElementById('startBtn');
-console.log(startBtn);
+const mainContainer = document.querySelector('.main-container');
+const gameContainer = document.querySelector('.game-container');
 
 startBtn.addEventListener('click', () => {
-    console.log('btn has been clicked');
-    console.log(cards);
+    showGameContainer();
 })
+
+// the functions
+
+function showGameContainer() {
+    mainContainer.classList.toggle('hidden');
+}
