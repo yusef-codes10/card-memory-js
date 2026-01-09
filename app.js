@@ -16,7 +16,7 @@ function showGameContainer() {
 }
 
 function loadCards() {
-    cards.array.forEach(card => {
+    cards.forEach(card => {
         const image = document.createElement('img');
         image.src = card.img;
         image.alt = card.id;
