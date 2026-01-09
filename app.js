@@ -13,3 +13,7 @@ startBtn.addEventListener('click', () => {
 function showGameContainer() {
     mainContainer.classList.toggle('hidden');
 }
+
+function loadCards() {
+    
+}
