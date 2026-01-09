@@ -15,5 +15,7 @@ function showGameContainer() {
 }
 
 function loadCards() {
-    
+    cards.array.forEach(card => {
+        
+    });
 }
