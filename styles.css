@@ -76,3 +76,8 @@
 .hidden {
     display: none;
 }
+
+.text-title {
+    text-align: center;
+    margin: 1rem 0;
+}
