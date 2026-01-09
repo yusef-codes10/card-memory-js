@@ -6,6 +6,7 @@ const gameContainer = document.querySelector('.game-container');
 
 startBtn.addEventListener('click', () => {
     showGameContainer();
+    loadCards();
 })
 
 // the functions
@@ -19,5 +20,7 @@ function loadCards() {
         const image = document.createElement('img');
         image.src = card.img;
         image.alt = card.id;
+
+        gameContainer.appendChild(image);
     });
 }
