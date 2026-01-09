@@ -99,3 +99,9 @@
 
 
 /* ! Gotta debug the flex: 1; not working */
+
+.game-container {
+    width: 100%;
+    height: 100px;
+    background-color: sienna;
+}
