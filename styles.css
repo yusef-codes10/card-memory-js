@@ -77,17 +77,12 @@
     display: none;
 }
 
-.text-title {
-    text-align: center;
-    margin: 1rem 0;
-}
-
 .main-container .start-game .size-btns {
     display: flex;
     justify-content: space-around;
 }
 
-.main-container .start-game .start-btn  {
+.main-container .start-game .start-btn, .text-title   {
     text-align: center;
     margin: 1rem 0;
 }
