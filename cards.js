@@ -2,15 +2,15 @@
 const cards = [
   {
     id: 'hello-kitty',
-    img: '/img/hello-kity.jpeg'
+    img: '/img/hello-kitty.jpeg'
   },
   {
     id: 'my-melody',
     img: '/img/my-melody.jpeg'
   },
   {
-    id: 'kurumi',
-    img: '/img/kurumi.jpeg'
+    id: 'kuromi',
+    img: '/img/kuromi.jpeg'
   },
   {
     id: 'pochacco',

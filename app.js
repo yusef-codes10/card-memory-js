@@ -7,6 +7,7 @@ const gameContainer = document.querySelector('.game-container');
 startBtn.addEventListener('click', () => {
     showGameContainer();
     loadCards();
+    loadCards();
 })
 
 // the functions

@@ -101,14 +101,13 @@
 /* ! Gotta debug the flex: 1; not working */
 
 .game-container {
-    width: 100%;
+    width: 50%;
     height: 100px;
     background-color: sienna;
-}
 
-.game-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
 }
 
 .game-container img {
