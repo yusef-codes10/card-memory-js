@@ -86,3 +86,8 @@
     display: flex;
     justify-content: space-around;
 }
+
+.main-container .start-game .start-btn  {
+    text-align: center;
+    margin: 1rem 0;
+}
