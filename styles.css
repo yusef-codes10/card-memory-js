@@ -91,4 +91,5 @@
     flex-grow: 1;
     /* padding: 2rem; */
     /* background-color: seagreen; */
+    /* ! parent: .start-game  is not a flex container */
 }
