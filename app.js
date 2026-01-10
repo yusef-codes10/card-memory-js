@@ -19,9 +19,13 @@ function showGameContainer() {
 function loadCards() {
     cards.forEach(card => {
         const image = document.createElement('img');
-        image.src = card.img;
+        image.src = card.bg;
         image.alt = card.id;
 
         gameContainer.appendChild(image);
     });
+}
+
+function flipCard() {
+    // calling the regular load function
 }
