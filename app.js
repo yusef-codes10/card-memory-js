@@ -10,6 +10,11 @@ startBtn.addEventListener('click', () => {
     loadCards();
 })
 
+// using event delegation for the container
+gameContainer.addEventListener('click', e => {
+    console.log(e.target);
+})
+
 // the functions
 
 function showGameContainer() {
