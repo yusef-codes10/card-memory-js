@@ -13,6 +13,7 @@ startBtn.addEventListener('click', () => {
 // using event delegation for the container
 gameContainer.addEventListener('click', e => {
     console.log(e.target);
+    flipCard();
 })
 
 // the functions
@@ -33,4 +34,11 @@ function loadCards() {
 
 function flipCard() {
     // calling the regular load function
+        cards.forEach(card => {
+        const image = document.createElement('img');
+        image.src = card.img;
+        image.alt = card.id;
+
+        gameContainer.appendChild(image);
+    });
 }
