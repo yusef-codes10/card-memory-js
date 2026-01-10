@@ -37,8 +37,9 @@ function flipCard() {
     // calling the regular load function
 
     // we have to clear the state first
-    cards.forEach(card => {
+    gameContainer.querySelectorAll('.dynamic-card').forEach(element => element.remove());
 
+    cards.forEach(card => {
         const image = document.createElement('img');
         image.classList.add('.dynamic-card');
         image.src = card.img;
