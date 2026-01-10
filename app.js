@@ -25,6 +25,7 @@ function showGameContainer() {
 function loadCards() {
     cards.forEach(card => {
         const image = document.createElement('img');
+        image.classList.add('.dynamic-card');
         image.src = card.bg;
         image.alt = card.id;
 
@@ -34,8 +35,12 @@ function loadCards() {
 
 function flipCard() {
     // calling the regular load function
-        cards.forEach(card => {
+
+    // we have to clear the state first
+    cards.forEach(card => {
+
         const image = document.createElement('img');
+        image.classList.add('.dynamic-card');
         image.src = card.img;
         image.alt = card.id;
 
