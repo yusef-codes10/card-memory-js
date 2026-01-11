@@ -48,7 +48,7 @@ function flipCard(e) {
      const card = cards.find(c => c.id === img.dataset.id);
 
     // 3️⃣ flip logic
-    if (card.dataset.flipped === 'false') {
+    if (img.dataset.flipped === 'false') {
         img.src = card.img;
         img.dataset.flipped = 'true';
     } else {
