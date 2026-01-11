@@ -1,5 +1,5 @@
 import { cards } from "./cards.js";
-import {flipSound} from './sound.js';
+import {flipSound, playFlipSound} from './sound.js';
 
 const startBtn = document.getElementById('startBtn');
 const mainContainer = document.querySelector('.main-container');
@@ -56,4 +56,5 @@ function flipCard(e) {
         img.src = card.bg;
         img.dataset.flipped = 'false';
     }
+    playFlipSound();
 }
