@@ -12,4 +12,4 @@ function stopFlipSound() {
     flipSound.currentTime = 0;
 }
 
-export {flipSound, playFlipSound}
+export {playFlipSound}
