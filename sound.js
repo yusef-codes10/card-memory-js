@@ -3,4 +3,9 @@
 const flipSound = new Audio('/sound/flip.mp3');
 
 
-export {flipSound}
+
+function playFlipSound() {
+    flipSound.play();
+}
+
+export {flipSound, playFlipSound}

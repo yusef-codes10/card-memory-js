@@ -15,7 +15,6 @@ startBtn.addEventListener('click', () => {
 gameContainer.addEventListener('click', e => {
     console.log(e.target);
     flipCard(e);
-    console.log(flipSound);
 })
 
 // the functions
