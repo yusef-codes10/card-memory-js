@@ -13,7 +13,7 @@ startBtn.addEventListener('click', () => {
 // using event delegation for the container
 gameContainer.addEventListener('click', e => {
     console.log(e.target);
-    flipCard();
+    flipCard(e);
 })
 
 // the functions
@@ -37,13 +37,14 @@ function loadCards() {
     });
 }
 
-function flipCard() {
+function flipCard(e) {
     // calling the regular load function
 
     // 1️⃣ make sure we clicked an image
     if (!e.target.classList.contains('dynamic-card')) return;
 
      // 2️⃣ find card data, which was stored on the dataset propery
+     const img = e.target;
      const card = cards.find(c => c.id === img.dataset.id);
 
     // 3️⃣ flip logic
