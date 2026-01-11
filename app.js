@@ -25,7 +25,7 @@ function showGameContainer() {
 function loadCards() {
     cards.forEach(card => {
         const image = document.createElement('img');
-        image.classList.add('.dynamic-card');
+        image.classList.add('dynamic-card');
         image.src = card.bg;
         image.alt = card.id;
 
@@ -41,7 +41,7 @@ function flipCard() {
 
     cards.forEach(card => {
         const image = document.createElement('img');
-        image.classList.add('.dynamic-card');
+        image.classList.add('dynamic-card');
         image.src = card.img;
         image.alt = card.id;
 
