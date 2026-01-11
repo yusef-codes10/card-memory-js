@@ -1,4 +1,5 @@
 import { cards } from "./cards.js";
+import {flipSound} from './sound.js';
 
 const startBtn = document.getElementById('startBtn');
 const mainContainer = document.querySelector('.main-container');
@@ -14,6 +15,7 @@ startBtn.addEventListener('click', () => {
 gameContainer.addEventListener('click', e => {
     console.log(e.target);
     flipCard(e);
+    console.log(flipSound);
 })
 
 // the functions
