@@ -29,6 +29,10 @@ function loadCards() {
         image.src = card.bg;
         image.alt = card.id;
 
+        // store data on the element itself
+        image.dataset.id = card.id;  // to search the exact img later
+        image.dataset.flipped = 'false';   // to see if it's flipped or not
+
         gameContainer.appendChild(image);
     });
 }
