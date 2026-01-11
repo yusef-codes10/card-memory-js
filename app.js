@@ -47,7 +47,7 @@ function flipCard(e) {
      const img = e.target;
      const card = cards.find(c => c.id === img.dataset.id);
 
-    // 3️⃣ flip logic
+    // 3️⃣ flip logic, card is data and img is UI. We have to understand that
     if (img.dataset.flipped === 'false') {
         img.src = card.img;
         img.dataset.flipped = 'true';
@@ -55,13 +55,4 @@ function flipCard(e) {
         img.src = card.bg;
         img.dataset.flipped = 'false';
     }
-
-    // cards.forEach(card => {
-    //     const image = document.createElement('img');
-    //     image.classList.add('dynamic-card');
-    //     image.src = card.img;
-    //     image.alt = card.id;
-
-    //     gameContainer.appendChild(image);
-    // });
 }
