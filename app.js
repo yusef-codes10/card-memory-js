@@ -40,8 +40,8 @@ function loadCards() {
 function flipCard() {
     // calling the regular load function
 
-    // we have to clear the state first
-    gameContainer.querySelectorAll('.dynamic-card').forEach(element => element.remove());
+    // make sure we clicked an image
+    if (!e.target.classList.contains('dynamic-card')) return;
 
     cards.forEach(card => {
         const image = document.createElement('img');
