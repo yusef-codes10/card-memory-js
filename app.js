@@ -46,12 +46,21 @@ function flipCard() {
      // 2️⃣ find card data, which was stored on the dataset propery
      const card = cards.find(c => c.id === img.dataset.id);
 
-    cards.forEach(card => {
-        const image = document.createElement('img');
-        image.classList.add('dynamic-card');
-        image.src = card.img;
-        image.alt = card.id;
+    // 3️⃣ flip logic
+    if (card.dataset.flipped === 'false') {
+        img.src = card.img;
+        img.dataset.flipped = 'true';
+    } else {
+        img.src = card.bg;
+        img.dataset.flipped = 'false';
+    }
 
-        gameContainer.appendChild(image);
-    });
+    // cards.forEach(card => {
+    //     const image = document.createElement('img');
+    //     image.classList.add('dynamic-card');
+    //     image.src = card.img;
+    //     image.alt = card.id;
+
+    //     gameContainer.appendChild(image);
+    // });
 }
