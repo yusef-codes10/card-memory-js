@@ -68,7 +68,7 @@ function perventTwoFlips() {
     imagesList.forEach(
         el => {
             const attr = el.getAttribute('data-flipped');
-            if (attr) {
+            if (attr === 'true') {
                 console.log('yes it\'s false');
             }
 
