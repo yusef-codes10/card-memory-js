@@ -94,15 +94,6 @@ function checkTwoCards() {
     // only compare when exactly two cards are flipped
     if (flippedCards.length !== 2) return false;
 
-    // flag the two matchig cards
-    flippedCards.forEach(
-        el => {
-            el.dataset.matched = 'true';
-        }
-    )
-    // remove the two matched cards
-    clearMatchingCards();
-    
     // compare their dataset ids
     return flippedCards[0].dataset.id === flippedCards[1].dataset.id;
 }
