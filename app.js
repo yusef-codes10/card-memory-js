@@ -94,7 +94,7 @@ function checkTwoCards() {
         el => {
             const attr = el.getAttribute('data-flipped');
             if (attr === 'true') {
-                storeIDs.push(el.id);
+                storeIDs.push(el.dataset.id);
             }
         }
     )
