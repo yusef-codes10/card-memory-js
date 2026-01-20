@@ -84,6 +84,8 @@ function perventTwoFlips() {
 // check if two cards matches
 function checkTwoCards() {
     // here's the logic to check the two flipped cards if they are matching
+    // first we have to have a Nodelist
+    const imagesList = document.querySelectorAll('.dynamic-card');
 }
 
 document.addEventListener('keydown', (event) => {
