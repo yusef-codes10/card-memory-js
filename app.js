@@ -45,7 +45,7 @@ function flipCard(e) {
     if (!e.target.classList.contains('dynamic-card')) return;
 
     // if two cards are flipped
-    if (perventTwoFlips === 2) return;
+    if (perventTwoFlips() === 2) return;
 
      // 2️⃣ find card data, which was stored on the dataset propery
      const img = e.target;
