@@ -66,7 +66,6 @@ function flipCard(e) {
 // pervent more than two cards to be flipped at a time
 function perventTwoFlips() {
     // using the dataset 
-
     // first we have to have a Nodelist
     const imagesList = document.querySelectorAll('.dynamic-card');
     let counter = 0;
@@ -80,6 +79,11 @@ function perventTwoFlips() {
         }
     )
     return counter;
+}
+
+// check if two cards matches
+function checkTwoCards() {
+    // here's the logic to check the two flipped cards if they are matching
 }
 
 document.addEventListener('keydown', (event) => {
