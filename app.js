@@ -66,7 +66,11 @@ function perventTwoFlips() {
     // first we have to have a Nodelist
     const imagesList = document.querySelectorAll('.dynamic-card');
     imagesList.forEach(
-        el => {console.log(el);}
+        el => {
+            const attr = el.getAttribute('data-flipped');
+            console.log(attr);
+
+        }
     )
 }
 
