@@ -44,8 +44,6 @@ function flipCard(e) {
     // 1️⃣ make sure we clicked an image
     if (!e.target.classList.contains('dynamic-card')) return;
 
-
-
      // 2️⃣ find card data, which was stored on the dataset propery
      const img = e.target;
      const card = cards.find(c => c.id === img.dataset.id);
@@ -58,6 +56,8 @@ function flipCard(e) {
         img.dataset.flipped = 'true';
         if (checkTwoCards()) {
             playCorrectFlip();
+            markcheckedCards();
+            clearMatchingCards();
         }
     } else {
         img.src = card.bg;
@@ -100,7 +100,6 @@ function checkTwoCards() {
 
 // mark checked cards
 function markcheckedCards() {
-    
      // get all flipped cards
     const flippedCards = document.querySelectorAll(
         '.dynamic-card[data-flipped="true"]'
