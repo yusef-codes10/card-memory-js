@@ -61,6 +61,9 @@ function flipCard(e) {
         img.dataset.flipped = 'false';
     }
     playFlipSound();
+    if (checkTwoCards()) {
+        playCorrectFlip();
+    }
 }
 
 // pervent more than two cards to be flipped at a time
@@ -95,7 +98,10 @@ function checkTwoCards() {
             }
         }
     )
-    return storeIDs;
+    if (storeIDs[0] === storeIDs[1]) {
+        return true;
+    }
+    return false;
 }
 
 document.addEventListener('keydown', (event) => {
