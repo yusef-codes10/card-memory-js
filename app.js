@@ -1,5 +1,5 @@
 import { cards } from "./cards.js";
-import {playFlipSound} from './sound.js';
+import {playFlipSound, playCorrectFlip} from './sound.js';
 
 const startBtn = document.getElementById('startBtn');
 const mainContainer = document.querySelector('.main-container');
