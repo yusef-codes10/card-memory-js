@@ -62,7 +62,20 @@ function flipCard(e) {
 // pervent more than two cards to be flipped at a time
 function perventTwoFlips() {
     // using the dataset 
+
+    // first we have to have a Nodelist
+    const imagesList = document.querySelectorAll('.dynamic-card');
+    imagesList.forEach(
+        el => {console.log(el);}
+    )
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    perventTwoFlips();
+    // Add your custom logic here (e.g., close a modal, hide a popup)
+  }
+});   
 
 
 
