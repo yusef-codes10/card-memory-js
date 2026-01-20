@@ -100,14 +100,23 @@ function checkTwoCards() {
             el.dataset.matched = 'true';
         }
     )
-
+    // remove the two matched cards
+    clearMatchingCards();
+    
     // compare their dataset ids
     return flippedCards[0].dataset.id === flippedCards[1].dataset.id;
 }
 
 // clear the two matching cards
 function clearMatchingCards() {
-    
+    const flippedCards = document.querySelectorAll(
+        '.dynamic-card[data-matched="true"]'
+    );
+    flippedCards.forEach(
+        el => {
+            el.remove();
+        }
+    )
 }
 
 document.addEventListener('keydown', (event) => {
