@@ -44,6 +44,9 @@ function flipCard(e) {
     // 1️⃣ make sure we clicked an image
     if (!e.target.classList.contains('dynamic-card')) return;
 
+    // if two cards are flipped
+    if (perventTwoFlips === 2) return;
+
      // 2️⃣ find card data, which was stored on the dataset propery
      const img = e.target;
      const card = cards.find(c => c.id === img.dataset.id);
@@ -65,15 +68,18 @@ function perventTwoFlips() {
 
     // first we have to have a Nodelist
     const imagesList = document.querySelectorAll('.dynamic-card');
+    let counter = 0;
     imagesList.forEach(
         el => {
             const attr = el.getAttribute('data-flipped');
             if (attr === 'true') {
                 console.log('yes it\'s false');
+                counter++;
             }
 
         }
     )
+    return counter;
 }
 
 document.addEventListener('keydown', (event) => {
