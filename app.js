@@ -52,11 +52,11 @@ function flipCard(e) {
 
     // 3️⃣ flip logic, card is data and img is UI. We have to understand that
     if (img.dataset.flipped === 'false') {
+        // if two cards are flipped
+        if (perventTwoFlips() === 2) return;
         img.src = card.img;
         img.dataset.flipped = 'true';
     } else {
-            // if two cards are flipped
-        if (perventTwoFlips() === 2) return;
         img.src = card.bg;
         img.dataset.flipped = 'false';
     }
