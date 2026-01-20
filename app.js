@@ -69,19 +69,16 @@ function flipCard(e) {
 // pervent more than two cards to be flipped at a time
 function perventTwoFlips() {
     // using the dataset 
-    // first we have to have a Nodelist
-    const imagesList = document.querySelectorAll('.dynamic-card');
-    let counter = 0;
-    imagesList.forEach(
-        el => {
-            const attr = el.getAttribute('data-flipped');
-            if (attr === 'true') {
-                console.log('yes it\'s false');
-                counter++;
-            }
-        }
-    )
-    return counter;
+    // get all flipped cards
+    const flippedCards = document.querySelectorAll(
+        '.dynamic-card[data-flipped="true"]'
+    );
+    
+    // only compare when exactly two cards are flipped
+    if (flippedCards.length !== 2) return false;
+
+    // compare thier dataset id
+    return flippedCards[0].dataset.id === flippedCards[1].dataset.id;
 }
 
 // check if two cards matches
