@@ -77,7 +77,7 @@ function perventTwoFlips() {
     imagesList.forEach(
         el => {
             const attr = el.getAttribute('data-flipped');
-            if (attr === 'true') {
+            if (attr === 'true' && el.dataset.matched !== 'true') {
                 console.log('yes it\'s false');
                 counter++;
             }
@@ -90,7 +90,7 @@ function perventTwoFlips() {
 function checkTwoCards() {
     // get all flipped cards
     const flippedCards = document.querySelectorAll(
-        '.dynamic-card[data-flipped="true"]'
+        '.dynamic-card[data-flipped="true"]:not([data-matched="true"]'
     );
 
     // only compare when exactly two cards are flipped
