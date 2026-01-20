@@ -86,6 +86,16 @@ function checkTwoCards() {
     // here's the logic to check the two flipped cards if they are matching
     // first we have to have a Nodelist
     const imagesList = document.querySelectorAll('.dynamic-card');
+    imagesList.forEach(
+        el => {
+            const attr = el.getAttribute('data-flipped');
+            let storeIDs = [];
+            if (attr === 'true') {
+                storeIDs.push(el.id);
+            }
+        }
+    )
+    return storeIDs;
 }
 
 document.addEventListener('keydown', (event) => {
