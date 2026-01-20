@@ -57,7 +57,9 @@ function flipCard(e) {
         if (checkTwoCards()) {
             playCorrectFlip();
             markcheckedCards();
-            clearMatchingCards();
+            setTimeout(() => {
+                clearMatchingCards();
+            }, 1000);
         }
     } else {
         img.src = card.bg;
@@ -110,8 +112,6 @@ function markcheckedCards() {
             el.dataset.matched = 'true';
         }
     )
-    // remove the two matched cards
-    clearMatchingCards();
 }
 
 // clear the two matching cards
@@ -121,7 +121,7 @@ function clearMatchingCards() {
     );
     flippedCards.forEach(
         el => {
-            el.remove();
+            el.classList.add('matched');
         }
     )
 }

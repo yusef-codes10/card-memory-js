@@ -115,3 +115,7 @@
     width: 100px;
     cursor: pointer;
 }
+
+.matched {
+    visibility: hidden;
+}
