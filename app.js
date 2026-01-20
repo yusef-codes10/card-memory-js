@@ -56,14 +56,14 @@ function flipCard(e) {
         if (perventTwoFlips() === 2) return;
         img.src = card.img;
         img.dataset.flipped = 'true';
+        if (checkTwoCards()) {
+            playCorrectFlip();
+        }
     } else {
         img.src = card.bg;
         img.dataset.flipped = 'false';
     }
     playFlipSound();
-    if (checkTwoCards()) {
-        playCorrectFlip();
-    }
 }
 
 // pervent more than two cards to be flipped at a time
