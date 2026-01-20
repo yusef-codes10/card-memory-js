@@ -93,9 +93,26 @@ function checkTwoCards() {
 
     // only compare when exactly two cards are flipped
     if (flippedCards.length !== 2) return false;
-
+    
     // compare their dataset ids
     return flippedCards[0].dataset.id === flippedCards[1].dataset.id;
+}
+
+// mark checked cards
+function markcheckedCards() {
+    
+     // get all flipped cards
+    const flippedCards = document.querySelectorAll(
+        '.dynamic-card[data-flipped="true"]'
+    );
+    // flag the two matchig cards
+    flippedCards.forEach(
+        el => {
+            el.dataset.matched = 'true';
+        }
+    )
+    // remove the two matched cards
+    clearMatchingCards();
 }
 
 // clear the two matching cards
