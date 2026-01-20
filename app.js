@@ -59,6 +59,13 @@ function flipCard(e) {
     playFlipSound();
 }
 
+// pervent more than two cards to be flipped at a time
+function perventTwoFlips() {
+    // using the dataset 
+}
+
+
+
 // TODO 1- flip two cards only at a time
 // TODO 2- compare ids of the two flipped cards
 // TODO 3- remove matching cards, or replace them
