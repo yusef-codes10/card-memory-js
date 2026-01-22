@@ -130,6 +130,11 @@ function clearMatchingCards() {
 function resetCards() {
     // look for open cards
 
+    // get all flipped cards
+    const flippedCards = document.querySelectorAll(
+        '.dynamic-card[data-flipped="true"]:not([data-matched="true"]'
+    );
+
     // use markCheckedCards to see 
     if (!markcheckedCards) {
         
