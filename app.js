@@ -136,11 +136,11 @@ function resetCards() {
     );
 
     // use markCheckedCards to see 
-    if (!markcheckedCards) {
-        flippedCards.forEach(
-            card => flipCard(card)
-        )
-    }
+    flippedCards.forEach(
+        img => {
+            const cards = cards.find(c => c.id === img.dataset.id);
+        }
+    )
 }
 
 document.addEventListener('keydown', (event) => {
