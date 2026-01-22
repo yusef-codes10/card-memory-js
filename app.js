@@ -137,7 +137,9 @@ function resetCards() {
 
     // use markCheckedCards to see 
     if (!markcheckedCards) {
-        
+        flippedCards.forEach(
+            card => flipCard(card)
+        )
     }
 }
 
