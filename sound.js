@@ -2,6 +2,7 @@
 
 const flipSound = new Audio('/sound/flip.mp3');
 const correctFlip = new Audio('/sound/win.mp3');
+const gameOverSound = new Audio('sound/game-over.mp3');
 
 function playFlipSound() {
     stopFlipSound();
@@ -13,8 +14,14 @@ function stopFlipSound() {
     flipSound.currentTime = 0;
 }
 
-function playCorrectFlip(params) {
+function playCorrectFlip() {
+    stopCorrectFlip();
     correctFlip.play();
+}
+
+function stopCorrectFlip() {
+    correctFlip.pause();
+    correctFlip.currentTime = 0;
 }
 
 export {playFlipSound, playCorrectFlip}
