@@ -1,5 +1,5 @@
 import { cards } from "./cards.js";
-import {playFlipSound, playCorrectFlip} from './sound.js';
+import {playFlipSound, playCorrectFlip, playGameOverSound} from './sound.js';
 
 const startBtn = document.getElementById('startBtn');
 const mainContainer = document.querySelector('.main-container');
@@ -60,6 +60,7 @@ function flipCard(e) {
             setTimeout(() => {
                 clearMatchingCards();
             }, 1000);
+            gameOver();
         } else {
             setTimeout(() => {
                 resetCards();
@@ -153,6 +154,10 @@ function resetCards() {
 // game over function 
 function gameOver() {
     // when winning play a sound track
+    const cards = document.querySelectorAll('.dynamic-card');
+    if([...cards].every(
+        img => img.dataset.matched === 'true'
+    )) playGameOverSound();
 }
 
 document.addEventListener('keydown', (event) => {
