@@ -60,6 +60,10 @@ function flipCard(e) {
             setTimeout(() => {
                 clearMatchingCards();
             }, 1000);
+        } else {
+            setTimeout(() => {
+                resetCards();
+            }, 2000);
         }
     } else {
         img.src = card.bg;
