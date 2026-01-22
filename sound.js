@@ -24,4 +24,14 @@ function stopCorrectFlip() {
     correctFlip.currentTime = 0;
 }
 
-export {playFlipSound, playCorrectFlip}
+function playGameOverSound() {
+    stopGameOverSound();
+    gameOverSound.play();
+}
+
+function stopGameOverSound() {
+    gameOverSound.pause();
+    gameOverSound.currentTime = 0;
+}
+
+export {playFlipSound, playCorrectFlip, playGameOverSound};
