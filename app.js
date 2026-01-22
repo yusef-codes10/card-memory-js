@@ -160,6 +160,7 @@ function gameOver() {
         img => img.dataset.matched === 'true'
     )) {playGameOverSound()
         gameOverContainer.classList.toggle('hidden');
+        gameOverContainer.classList.add('visible');
     };
 }
 
