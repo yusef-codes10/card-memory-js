@@ -4,6 +4,7 @@ import {playFlipSound, playCorrectFlip, playGameOverSound} from './sound.js';
 const startBtn = document.getElementById('startBtn');
 const mainContainer = document.querySelector('.main-container');
 const gameContainer = document.querySelector('.game-container');
+const gameOverContainer = document.querySelector('.game-over');
 
 startBtn.addEventListener('click', () => {
     showGameContainer();
@@ -157,7 +158,9 @@ function gameOver() {
     const cards = document.querySelectorAll('.dynamic-card');
     if([...cards].every(
         img => img.dataset.matched === 'true'
-    )) playGameOverSound();
+    )) {playGameOverSound()
+        gameOverContainer.classList.toggle('hidden');
+    };
 }
 
 document.addEventListener('keydown', (event) => {
