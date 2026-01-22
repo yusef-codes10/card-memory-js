@@ -150,6 +150,11 @@ function resetCards() {
     )
 }
 
+// game over function 
+function gameOver() {
+    // when winning play a sound track
+}
+
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     perventTwoFlips();
