@@ -129,10 +129,11 @@ function clearMatchingCards() {
 // rest cards if they are not matching
 function resetCards() {
     // look for open cards
-    // get all flipped cards
-    const flippedCards = document.querySelectorAll(
-        '.dynamic-card[data-flipped="true"]'
-    );
+
+    // use markCheckedCards to see 
+    if (!markcheckedCards) {
+        
+    }
 }
 
 document.addEventListener('keydown', (event) => {
