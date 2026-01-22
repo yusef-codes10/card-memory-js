@@ -138,7 +138,10 @@ function resetCards() {
     // use markCheckedCards to see 
     flippedCards.forEach(
         img => {
-            const cards = cards.find(c => c.id === img.dataset.id);
+            const card = cards.find(c => c.id === img.dataset.id);
+
+            img.src = card.bg;
+            img.dataset.flipped = "false";
         }
     )
 }
