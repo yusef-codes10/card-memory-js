@@ -126,6 +126,11 @@ function clearMatchingCards() {
     )
 }
 
+// rest cards if they are not matching
+function resetCards() {
+    // look for open cards
+}
+
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     perventTwoFlips();
