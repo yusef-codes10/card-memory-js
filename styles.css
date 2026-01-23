@@ -11,6 +11,10 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "navbar navbar"
+    "main main"
+    "footer footer";
 
     background-image:  url(/img/bg.jpg);
     background-size: cover;
@@ -24,6 +28,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-height: 10vh;
+    grid-area: navbar;
 }
 
 .hero-section .btn-container {
@@ -51,8 +57,8 @@
 .main-container {
     display: flex;
     justify-content: flex-start;
-    /* align-items: center; */
-    height: 100%;
+
+    grid-area: main;
 }
 
 .main-container .start-game {
