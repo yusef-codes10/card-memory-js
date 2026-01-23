@@ -161,8 +161,12 @@ footer {
     background-color: sienna;
 }
 
+.mobile-only {
+    display: none;
+}
+
 @media(max-width: 650px) {
-    .game-container {
+    .game-container, .main-container {
         margin: 1rem auto;
     }
 
@@ -176,7 +180,7 @@ footer {
     nav h2 {
         display: none;
     }
-    nav i {
-        display: block;
+    .mobile-only {
+        display: inline-block;
     }
 }
