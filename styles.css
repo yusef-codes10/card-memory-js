@@ -33,9 +33,9 @@
     /* max-height: 10vh; */
     grid-area: navbar;
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
+    z-index: 100;
 }
 
 .hero-section .btn-container {
