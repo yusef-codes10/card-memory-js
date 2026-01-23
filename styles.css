@@ -168,6 +168,7 @@ footer {
 @media(max-width: 650px) {
     .game-container, .main-container {
         margin: 1rem auto;
+        width: 80%;
     }
 
     .game-container img {
