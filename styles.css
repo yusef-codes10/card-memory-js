@@ -147,3 +147,8 @@
     height: 200px;
     width: 500px;
 }
+
+footer {
+    grid-area: footer;
+    background-color: sienna;
+}
