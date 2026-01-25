@@ -180,10 +180,9 @@ footer {
         width: 80%;
     }
 
-    /* .game-container img {
-        width: 50px;
-        height: 75px;
-    } */
+    .game-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
     nav button {
         display: none;
     }
