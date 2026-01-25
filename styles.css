@@ -133,15 +133,17 @@
     /* background-color: sienna; */
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     gap: 12px;
 }
 
 .game-container img {
-    height: 150px;
-    width: 100px;
-    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    height: auto;
+    object-fit: cover;
 }
+
 
 .matched {
     visibility: hidden;
@@ -178,10 +180,10 @@ footer {
         width: 80%;
     }
 
-    .game-container img {
+    /* .game-container img {
         width: 50px;
         height: 75px;
-    }
+    } */
     nav button {
         display: none;
     }
