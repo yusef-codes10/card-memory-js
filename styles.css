@@ -175,9 +175,10 @@ footer {
 }
 
 @media(max-width: 450px) {
-    .game-container, .main-container {
-        margin: 1rem auto;
-        width: 80%;
+    .game-container, .main-container, .start-game {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .game-container {
@@ -190,9 +191,6 @@ footer {
         display: none;
     }
 
-    .game-container .start-game {
-        margin: 0 auto;
-    }
     .mobile-only {
         display: inline-block;
     }
