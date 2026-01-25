@@ -175,14 +175,20 @@ footer {
 }
 
 @media(max-width: 450px) {
-    .game-container, .main-container, .start-game {
+    .main-container, .start-game {
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
     .game-container {
+        width: 100vw;
+        padding: 0.75rem;
+        margin: 0;
+
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem
     }
     nav button {
         display: none;
