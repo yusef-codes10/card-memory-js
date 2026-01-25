@@ -81,8 +81,11 @@
     /* display: flex; */
         display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+.start-game .size-btns {
+    display: flex;
     flex-wrap: wrap;
-
 }
 
 .main-container .start-game button {
