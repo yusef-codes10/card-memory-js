@@ -65,7 +65,7 @@ function flipCard(e) {
         } else {
             setTimeout(() => {
                 resetCards();
-            }, 2000);
+            }, 4000);
         }
     } else {
         img.src = card.bg;
